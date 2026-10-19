@@ -18,6 +18,7 @@
     "t2:anthropic": "tsx t2_llms_output_tuning/anthropic_task.ts",
     "t2:gemini": "tsx t2_llms_output_tuning/gemini_task.ts",
     "t3:image-analysis": "tsx t3_content_generation/t1/image_analysis.ts",
+    "t3:image-analysis-anthropic": "tsx --env-file=.env t3_content_generation/t1/image_analysis_anthropic.ts",
     "t3:gpt-image": "tsx t3_content_generation/t2/gpt_image_generation.ts",
     "t3:gpt-image-edit": "tsx t3_content_generation/t2/gpt_image_edit.ts",
     "t3:speech-to-text": "tsx t3_content_generation/t3/speech_to_text.ts",

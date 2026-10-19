@@ -8,6 +8,7 @@ and audio. The goal is to understand how to work with vision models, image gener
 | Task | Command |
 |---|---|
 | Image Analysis | `npm run t3:image-analysis` |
+| Image Analysis (Anthropic) | `npm run t3:image-analysis-anthropic` |
 | GPT Image 1 Generation | `npm run t3:gpt-image` |
 | GPT Image 1 Edit | `npm run t3:gpt-image-edit` |
 | Speech to Text | `npm run t3:speech-to-text` |
@@ -28,6 +29,8 @@ Open [t1/image_analysis.ts](t1/image_analysis.ts) and implement the TODO:
   - A remote image by URL: `https://a-z-animals.com/media/2019/11/Elephant-male-1024x535.jpg`
   - A local image `logo.png` — encode it to base64 (see [docs](https://developers.openai.com/api/docs/guides/images-vision?format=base64-encoded))
 - Pass both images in a single message and ask the model to generate a poem based on them
+- Alternative: [t1/image_analysis_anthropic.ts](t1/image_analysis_anthropic.ts) does the same with Claude via the Anthropic Messages API 
+  (`image` content blocks with `url` and `base64` sources).
 
 ### 2. Image Generation
 #### GPT Image 1
